@@ -5,12 +5,17 @@
     </head>
     <body>
           <h1>This is about Page</h1>
-        <form action="{{url_for('home')}}" method="get" style="display: inline;">          
+        <div>
+            <form action="{{url_for('home')}}" method="get" style="display: inline;">          
             <button type="submit">Home</button>
             
-        </form>
-        <form action="{{url_for('contact')}}" method="get" style="display: inline;">
+            </form>
+        </div>
+        <br/>
+        <div>
+            <form action="{{url_for('contact')}}" method="get" style="display: inline;">
             <button>Contact Us</button>
-        </form>
+            </form>
+        </div>
     </body>
 </html>

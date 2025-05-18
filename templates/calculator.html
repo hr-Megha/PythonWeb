@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Calculate by using suitable operator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <form method="post">
+            
+            <div>First Number   <input name="num1" type="number" step="any" required></div>
+            <br/>
+            <div>Select Operator <select name="operation">
+                <option value="add" > + </option>
+                <option value="subtract"> - </option>
+                <option value="multiply"> X </option>
+                <option value="divide"> % </option>
+            </select></div>
+            <br/>
+            <div>Second Number <input name="num2" step="any" type="number" required></div>
+            <br/>
+
+        <div><button  type="submit" onclick="location.href='{{url_for('calculator')}}'">Calculate</button></div>
+       
+        </form>
+        {% if result is not none %}
+       <div><h2>Result: {{ result }}</h2></div>
+    {% endif %}
+    </body>
+</html>
